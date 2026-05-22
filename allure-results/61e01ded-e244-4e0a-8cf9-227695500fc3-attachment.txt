@@ -1,4 +1,0 @@
-Jira Story: CDR-101
-Summary: Validate customer account data sharing through Open Banking API
-Epic: Open Banking Accounts API
-Acceptance criteria validated successfully.
