@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": [
+        "consentId",
+        "status",
+        "permissions",
+        "expiryDate"
+      ],
+      "properties": {
+        "consentId": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "permissions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "expiryDate": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

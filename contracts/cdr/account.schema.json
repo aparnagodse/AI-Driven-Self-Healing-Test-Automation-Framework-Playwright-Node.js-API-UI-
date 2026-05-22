@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": ["accounts"],
+      "properties": {
+        "accounts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "accountId",
+              "displayName",
+              "accountNumber",
+              "productCategory"
+            ],
+            "properties": {
+              "accountId": {
+                "type": "string"
+              },
+              "displayName": {
+                "type": "string"
+              },
+              "accountNumber": {
+                "type": "string"
+              },
+              "productCategory": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+Accessibility Violations: 1
+Rule: aria-allowed-attr
+Impact: critical
+Description: Ensure an element's role supports its ARIA attributes

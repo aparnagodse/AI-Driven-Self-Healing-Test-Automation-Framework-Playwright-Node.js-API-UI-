@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": ["transactions"],
+      "properties": {
+        "transactions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "transactionId",
+              "accountId",
+              "amount",
+              "currency",
+              "description",
+              "status"
+            ],
+            "properties": {
+              "transactionId": {
+                "type": "string"
+              },
+              "accountId": {
+                "type": "string"
+              },
+              "amount": {
+                "type": "number"
+              },
+              "currency": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

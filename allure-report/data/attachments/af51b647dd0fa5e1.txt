@@ -1,0 +1,6 @@
+Database Record: {
+  account_id: 'ACC001',
+  current_balance: '2500.75',
+  available_balance: '2400.75',
+  currency: 'AUD'
+}

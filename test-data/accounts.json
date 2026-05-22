@@ -1,0 +1,11 @@
+{
+  "accounts": [
+    {
+      "accountId": "ACC001",
+      "displayName": "Savings Account",
+      "currentBalance": 2500.75,
+      "availableBalance": 2400.75,
+      "currency": "AUD"
+    }
+  ]
+}

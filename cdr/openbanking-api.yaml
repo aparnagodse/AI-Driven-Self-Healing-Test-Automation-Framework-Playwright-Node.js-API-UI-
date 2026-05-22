@@ -1,0 +1,28 @@
+openapi: 3.0.0
+
+info:
+  title: Open Banking CDR API
+  version: 1.0.0
+  description: Sample Open Banking/CDR API contract for Playwright validation.
+
+paths:
+  /banking/accounts:
+    get:
+      summary: Get customer accounts
+      responses:
+        "200":
+          description: Accounts retrieved successfully
+
+  /banking/transactions:
+    get:
+      summary: Get customer transactions
+      responses:
+        "200":
+          description: Transactions retrieved successfully
+
+  /cdr/consent:
+    get:
+      summary: Get consent status
+      responses:
+        "200":
+          description: Consent retrieved successfully

@@ -1,0 +1,11 @@
+{
+  "jiraKey": "CDR-101",
+  "summary": "Validate customer account data sharing through Open Banking API",
+  "epic": "Open Banking Accounts API",
+  "acceptanceCriteria": [
+    "Customer account response must include accountId",
+    "Customer account response must include displayName",
+    "Customer account response must include productCategory",
+    "API response must match agreed CDR contract"
+  ]
+}
