@@ -38,6 +38,10 @@ tests/
 │
 ├── accessibility/
 │   └── nab-accessibility.spec.js
+├── ui/
+│   ├── payment-transfer.spec.js
+│   ├── negative-validation.spec.js
+│   └── webApp.spec.js
 
 test-data/
 ├── accounts.json
@@ -48,9 +52,6 @@ utils/
 └── schemaValidator.js
 
 screenshots/
-Reports/
-allure-report/
-playwright-report/
 ```
 ---
 
@@ -87,6 +88,24 @@ The framework has been extended beyond traditional UI automation to support:
 
 ## ✅ Accessibility Validation
 Accessibility validation is integrated using axe-core with Playwright.
+
+## ✅ UI Automation Validation
+
+Representative enterprise-style UI automation coverage includes:
+
+- Authentication and login validation
+- Payment transfer workflow validation
+- Negative validation scenarios
+- Cross-browser execution support
+- Reusable Page Object Model (POM) architecture
+- UI regression execution patterns
+- Enterprise reporting integration
+
+Implemented using:
+
+- Playwright
+- JavaScript
+- Page Object Model (POM)
 
 Coverage includes:
 
