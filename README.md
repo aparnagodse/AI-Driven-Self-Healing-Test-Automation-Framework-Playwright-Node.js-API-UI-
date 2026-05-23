@@ -436,10 +436,92 @@ for:
 
 ## ⚙️ How to Run
 
+### Install Dependencies
+
 ```bash
 npm install
+```
+
+---
+
+### Install Playwright Browsers
+
+```bash
 npx playwright install
+```
+
+---
+
+### Run Complete Test Suite
+
+```bash
 npx playwright test
+```
+
+---
+
+### Run UI Automation Suite
+
+```bash
+npx playwright test tests/ui
+```
+
+---
+
+### Run Accessibility Validation Suite
+
+```bash
+npx playwright test tests/accessibility
+```
+
+---
+
+### Run API Validation Suite
+
+```bash
+npx playwright test tests/api
+```
+
+---
+
+### Run Performance Validation Suite
+
+```bash
+npx playwright test tests/performance
+```
+
+---
+
+### Open Playwright HTML Report
+
+```bash
+npx playwright show-report
+```
+
+---
+
+## 📊 Allure Reporting
+
+### Generate Allure Results
+
+```bash
+npx playwright test --reporter=allure-playwright
+```
+
+---
+
+### Open Allure Dashboard
+
+```bash
+npx allure serve allure-results
+```
+
+---
+
+### Clean Existing Allure Reports
+
+```bash
+rm -rf allure-results allure-report
 ```
 
 ---
