@@ -6,7 +6,7 @@ import { CheckoutPage } from '../../pages/CheckoutPage.js';
 import { users, checkoutData } from '../../fixtures/testData.js';
 import { logStep } from '../../utils/helpers.js';
 
-test.describe('Saucedemo E-commerce Flow', () => {
+test.describe('Open Banking Payment Transfer Validation', () => {
   test('User can login, add products to cart, and start checkout', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);

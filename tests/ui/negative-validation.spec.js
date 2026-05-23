@@ -6,7 +6,7 @@ import { CheckoutPage } from '../../pages/CheckoutPage.js';
 import { users, checkoutData } from '../../fixtures/testData.js';
 import { logStep } from '../../utils/helpers.js';
 
-test.describe('Saucedemo Negative Scenarios', () => {
+test.describe('Open Banking Negative Validation', () => {
   test('Invalid login should show error', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
