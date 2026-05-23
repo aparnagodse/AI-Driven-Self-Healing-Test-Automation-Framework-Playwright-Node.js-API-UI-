@@ -42,7 +42,6 @@ tests/
 │   ├── payment-transfer.spec.js
 │   ├── negative-validation.spec.js
 │   └── webApp.spec.js
-
 test-data/
 ├── accounts.json
 └── jira/
@@ -432,6 +431,8 @@ for:
 
 👉 https://drive.google.com/file/d/1A1DT-3QVswHYtVJ5rDmKKXfzw5PaI7M5/view
 
+The demo showcases API automation, UI automation, accessibility validation, performance validation, Allure reporting, and AI-assisted failure analysis workflows.
+
 ---
 
 ## ⚙️ How to Run
@@ -525,7 +526,7 @@ rm -rf allure-results allure-report
 ```
 
 ---
-
+## 📊 Generate Static Allure Report
 ```bash
 npx playwright show-report
 npx allure generate allure-results --clean -o allure-report
