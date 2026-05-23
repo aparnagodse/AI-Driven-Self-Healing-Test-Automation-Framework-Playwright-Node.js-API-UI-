@@ -88,6 +88,12 @@ The framework has been extended beyond traditional UI automation to support:
 
 ## ✅ Accessibility Validation
 Accessibility validation is integrated using axe-core with Playwright.
+Coverage includes:
+
+- WCAG-focused accessibility validation
+- Accessibility audit execution
+- Accessibility evidence generation
+- Automated accessibility scanning patterns
 
 ## ✅ UI Automation Validation
 
@@ -106,13 +112,6 @@ Implemented using:
 - Playwright
 - JavaScript
 - Page Object Model (POM)
-
-Coverage includes:
-
-- WCAG-focused accessibility validation
-- Accessibility audit execution
-- Accessibility evidence generation
-- Automated accessibility scanning patterns
 
 ## ✅ Enterprise Reporting & Traceability
 - Allure enterprise reporting
