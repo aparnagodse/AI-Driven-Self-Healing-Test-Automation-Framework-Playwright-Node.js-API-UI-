@@ -5,6 +5,53 @@ This repository demonstrates a modern enterprise Quality Engineering framework b
 
 The framework has been extended to support Open Banking / Consumer Data Right (CDR) validation scenarios including API automation, contract validation, backend validation, performance validation, accessibility testing, and enterprise reporting.
 
+# 🏗️ Framework Architecture
+
+![Framework Architecture](screenshots/architecture.png)
+
+---
+
+# 📂 Framework Structure
+
+```text
+contracts/
+├── cdr/
+│   ├── account.schema.json
+│   ├── transaction.schema.json
+│   ├── consent.schema.json
+│   └── openbanking-api.yaml
+
+tests/
+├── api/
+│   └── cdr/
+│       ├── accounts.spec.js
+│       ├── transactions.spec.js
+│       ├── consent.spec.js
+│       ├── openapi-validation.spec.js
+│       └── jira-traceability.spec.js
+│
+├── database/
+│   └── mysql-validation.spec.js
+│
+├── performance/
+│   └── cdr-api-performance.spec.js
+│
+├── accessibility/
+│   └── nab-accessibility.spec.js
+
+test-data/
+├── accounts.json
+└── jira/
+    └── cdr-user-story.json
+
+utils/
+└── schemaValidator.js
+
+screenshots/
+Reports/
+allure-report/
+playwright-report/
+```
 ---
 
 # 🚀 Enterprise Open Banking / CDR QE Framework
@@ -151,54 +198,6 @@ Validation Type:
 This framework is a representative enterprise QE accelerator and demonstration platform designed to showcase scalable automation, contract validation, backend validation, reporting, and Open Banking testing concepts.
 
 ---
-
-# 🏗️ Framework Architecture
-
-![Framework Architecture](screenshots/architecture.png)
-
----
-
-# 📂 Framework Structure
-
-```text
-contracts/
-├── cdr/
-│   ├── account.schema.json
-│   ├── transaction.schema.json
-│   ├── consent.schema.json
-│   └── openbanking-api.yaml
-
-tests/
-├── api/
-│   └── cdr/
-│       ├── accounts.spec.js
-│       ├── transactions.spec.js
-│       ├── consent.spec.js
-│       ├── openapi-validation.spec.js
-│       └── jira-traceability.spec.js
-│
-├── database/
-│   └── mysql-validation.spec.js
-│
-├── performance/
-│   └── cdr-api-performance.spec.js
-│
-├── accessibility/
-│   └── nab-accessibility.spec.js
-
-test-data/
-├── accounts.json
-└── jira/
-    └── cdr-user-story.json
-
-utils/
-└── schemaValidator.js
-
-screenshots/
-Reports/
-allure-report/
-playwright-report/
-```
 
 ## 📸 Demo Screenshots
 
