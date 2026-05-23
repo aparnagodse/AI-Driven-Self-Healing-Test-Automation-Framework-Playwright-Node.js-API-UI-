@@ -1,1 +1,0 @@
-CDR contract validation time: 1.67 ms
