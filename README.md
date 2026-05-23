@@ -5,6 +5,9 @@ This repository demonstrates a modern enterprise Quality Engineering framework b
 
 The framework has been extended to support Open Banking / Consumer Data Right (CDR) validation scenarios including API automation, contract validation, backend validation, performance validation, accessibility testing, and enterprise reporting.
 
+The framework follows scalable enterprise QE architecture patterns including modular design, reusable utilities, externalised test data management, layered validation, and reporting-driven execution.
+
+
 # 🏗️ Framework Architecture
 
 ![Framework Architecture](screenshots/architecture.png)
@@ -277,7 +280,7 @@ This helps reduce debugging time, improves test stability, and supports faster r
 - Accessibility testing using axe-core
 - Performance validation using Lighthouse
 - Mobile testing structure for responsive scenarios
-- CI/CD integration using GitHub Actions
+- CI/CD integration using GitHub Actions workflows
 - Allure enterprise reporting with failure analysis support
 - Open Banking / Consumer Data Right (CDR) API validation
 - Contract testing using AJV JSON schema validation
