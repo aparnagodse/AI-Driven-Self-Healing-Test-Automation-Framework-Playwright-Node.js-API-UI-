@@ -1,5 +1,5 @@
 # Open Banking QE Automation Framework
-AI-Driven Self-Healing Playwright Framework for Enterprise Banking, API, Accessibility and Contract Testing
+AI-Assisted Self-Healing Playwright Framework for Enterprise Banking, API, Accessibility and Contract Testing
 
 This repository demonstrates a modern enterprise Quality Engineering framework built using Playwright, JavaScript, and enterprise automation testing practices.
 
@@ -525,8 +525,6 @@ rm -rf allure-results allure-report
 ```
 
 ---
-
-## 📊 Reporting
 
 ```bash
 npx playwright show-report
