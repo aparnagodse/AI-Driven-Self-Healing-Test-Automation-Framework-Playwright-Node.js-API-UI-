@@ -1,4 +1,5 @@
-# AI-Driven Self-Healing Playwright Enterprise QE Framework
+# Open Banking QE Automation Framework
+AI-Driven Self-Healing Playwright Framework for Enterprise Banking, API, Accessibility and Contract Testing
 
 This repository demonstrates a modern enterprise Quality Engineering framework built using Playwright, JavaScript, and enterprise automation testing practices.
 
