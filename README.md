@@ -7,7 +7,7 @@ The framework has been extended to support Open Banking / Consumer Data Right (C
 
 # 🏗️ Framework Architecture
 
-![Framework Architecture](screenshots/screenshots/screenshots/architecture.png)
+![Framework Architecture](screenshots/architecture.png)
 
 ---
 
