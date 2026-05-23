@@ -1,5 +1,5 @@
 # Open Banking QE Automation Framework
-AI-Assisted Self-Healing Playwright Framework for Enterprise Banking, API, Accessibility and Contract Testing
+AI-Driven Self-Healing Playwright Framework for Enterprise Banking, API, Accessibility and Contract Testing
 
 This repository demonstrates a modern enterprise Quality Engineering framework built using Playwright, JavaScript, and enterprise automation testing practices.
 
@@ -41,6 +41,7 @@ tests/
 │
 ├── accessibility/
 │   └── nab-accessibility.spec.js
+│ 
 ├── ui/
 │   ├── payment-transfer.spec.js
 │   ├── negative-validation.spec.js
