@@ -46,6 +46,7 @@ tests/
 │   ├── payment-transfer.spec.js
 │   ├── negative-validation.spec.js
 │   └── webApp.spec.js
+│
 test-data/
 ├── accounts.json
 └── jira/
@@ -291,6 +292,7 @@ This helps reduce debugging time, improves test stability, and supports faster r
 - Backend database validation using MySQL
 - Externalised reusable test datasets
 - Representative Jira traceability integration pattern
+- Layered enterprise validation across UI, API, contract, accessibility, performance, and backend data layers
 
 # 🏦 Open Banking / Consumer Data Right (CDR) API Testing
 
@@ -532,7 +534,6 @@ rm -rf allure-results allure-report
 ---
 ## 📊 Generate Static Allure Report
 ```bash
-npx playwright show-report
 npx allure generate allure-results --clean -o allure-report
 npx allure open allure-report
 ```
