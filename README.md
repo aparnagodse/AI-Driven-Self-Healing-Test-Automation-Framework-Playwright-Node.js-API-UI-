@@ -19,23 +19,47 @@ It aligns to enterprise Open Banking validation layers covering ETL/CDC propagat
 # 📂 Framework Structure
 
 ```text
-contracts/              → API contract and schema validation
+contracts/                                → API contract and schema validation
 ├── cdr/
-│   ├── account.schema.json       → validates account API response structure and mandatory fields
-│   ├── transaction.schema.json   → validates transaction response schema and data types
-│   ├── consent.schema.json       → validates consent lifecycle and status rules
-│   └── openbanking-api.yaml      → OpenAPI/Swagger contract validation
+│   ├── account.schema.json               → validates account API response structure and mandatory fields
+│   ├── transaction.schema.json           → validates transaction response schema and data types
+│   ├── consent.schema.json               → validates consent lifecycle and status rules
+│   └── openbanking-api.yaml              → OpenAPI/Swagger contract validation
 
-tests/                  → actual automated test suites
-├── api/                → API status, headers, schema, auth and business rule validation
-├── database/           → SQL/source table reconciliation and backend data validation
-├── performance/        → k6/JMeter response time, load and SLA validation
-├── accessibility/      → axe/Lighthouse WCAG accessibility validation
-└── ui/                 → Playwright end-to-end customer journey validation
+tests/                                    → actual automated test suites
+├── api/                                  → API status, headers, schema, auth and business rule validation
+│   ├── accounts.spec.ts                  → validates accounts endpoint response and business rules
+│   ├── transactions.spec.ts              → validates transaction API response and reconciliation rules
+│   └── consent.spec.ts                   → validates consent creation, expiry and revocation flows
+│
+├── database/                             → SQL/source table reconciliation and backend data validation
+│   ├── account-reconciliation.sql        → validates API response against source account tables
+│   └── transaction-reconciliation.sql    → validates transaction consistency across backend systems
+│
+├── performance/                          → k6/JMeter response time, load and SLA validation
+│   └── openbanking-load.js               → validates API performance under expected user load
+│
+├── accessibility/                        → axe/Lighthouse WCAG accessibility validation
+│   └── accessibility.spec.ts             → validates WCAG 2.1 AA compliance and accessibility rules
+│
+└── ui/                                   → Playwright end-to-end customer journey validation
+    ├── login.spec.ts                     → validates secure customer login journey
+    └── consent-flow.spec.ts              → validates Open Banking consent authorisation flow
 
-test-data/              → controlled mock payloads and reusable test input data
-utils/                  → reusable helpers for API client, DB connection, auth, logging and validation
-screenshots/            → failure evidence and accessibility/UI execution snapshots
+test-data/                                → controlled mock payloads and reusable test input data
+├── mock-users.json                       → reusable customer and consent mock data
+└── sample-transactions.json              → reusable transaction validation payloads
+
+utils/                                    → reusable helpers for API client, DB connection, auth, logging and validation
+├── api-client.ts                         → reusable API request helper
+├── db-client.ts                          → reusable database connection helper
+├── auth-helper.ts                        → OAuth2/Open Banking token generation helper
+├── schema-validator.ts                   → reusable JSON schema validation utility
+└── logger.ts                             → centralised execution and error logging utility
+
+screenshots/                              → failure evidence and accessibility/UI execution snapshots
+├── ui-failures/                          → failed Playwright execution screenshots
+└── accessibility-reports/                → accessibility scan evidence and reports
 ```
 ## Implemented Using
 
