@@ -19,47 +19,64 @@ It aligns to enterprise Open Banking validation layers covering ETL/CDC propagat
 # 📂 Framework Structure
 
 ```text
-contracts/                                → API contract and schema validation
-├── cdr/
-│   ├── account.schema.json               → validates account API response structure and mandatory fields
-│   ├── transaction.schema.json           → validates transaction response schema and data types
-│   ├── consent.schema.json               → validates consent lifecycle and status rules
-│   └── openbanking-api.yaml              → OpenAPI/Swagger contract validation
-
-tests/                                    → actual automated test suites
-├── api/                                  → API status, headers, schema, auth and business rule validation
-│   ├── accounts.spec.ts                  → validates accounts endpoint response and business rules
-│   ├── transactions.spec.ts              → validates transaction API response and reconciliation rules
-│   └── consent.spec.ts                   → validates consent creation, expiry and revocation flows
+Open-Banking-QE-Playwright-Automation-Framework/
 │
-├── database/                             → SQL/source table reconciliation and backend data validation
-│   ├── account-reconciliation.sql        → validates API response against source account tables
-│   └── transaction-reconciliation.sql    → validates transaction consistency across backend systems
+├── contracts/                                        → API contract and schema validation
+│   └── cdr/
+│       ├── account.schema.json                       → validates account API response structure and mandatory fields
+│       ├── transaction.schema.json                   → validates transaction response schema and data types
+│       ├── consent.schema.json                       → validates consent lifecycle and status rules
+│       └── openbanking-api.yaml                      → OpenAPI/Swagger contract validation
 │
-├── performance/                          → k6/JMeter response time, load and SLA validation
-│   └── openbanking-load.js               → validates API performance under expected user load
+├── tests/                                            → actual automated test suites
+│   ├── api/                                          → API status, headers, schema, auth and business rule validation
+│   │   ├── accounts.spec.ts                          → validates accounts endpoint response and business rules
+│   │   ├── transactions.spec.ts                      → validates transaction API response and reconciliation rules
+│   │   └── consent.spec.ts                           → validates consent creation, expiry and revocation flows
+│   │
+│   ├── database/                                     → SQL/source table reconciliation and backend data validation
+│   │   ├── account-reconciliation.sql                → validates API response against source account tables
+│   │   └── transaction-reconciliation.sql            → validates transaction consistency across backend systems
+│   │
+│   ├── performance/                                  → k6/JMeter response time, load and SLA validation
+│   │   └── openbanking-load.js                       → validates API performance under expected user load
+│   │
+│   ├── accessibility/                                → axe/Lighthouse WCAG accessibility validation
+│   │   └── accessibility.spec.ts                     → validates WCAG 2.1 AA compliance and accessibility rules
+│   │
+│   └── ui/                                           → Playwright end-to-end customer journey validation
+│       ├── login.spec.ts                             → validates secure customer login journey
+│       └── consent-flow.spec.ts                      → validates Open Banking consent authorisation flow
 │
-├── accessibility/                        → axe/Lighthouse WCAG accessibility validation
-│   └── accessibility.spec.ts             → validates WCAG 2.1 AA compliance and accessibility rules
+├── test-data/                                        → controlled mock payloads and reusable test input data
+│   ├── mock-users.json                               → reusable customer and consent mock data
+│   └── sample-transactions.json                      → reusable transaction validation payloads
 │
-└── ui/                                   → Playwright end-to-end customer journey validation
-    ├── login.spec.ts                     → validates secure customer login journey
-    └── consent-flow.spec.ts              → validates Open Banking consent authorisation flow
-
-test-data/                                → controlled mock payloads and reusable test input data
-├── mock-users.json                       → reusable customer and consent mock data
-└── sample-transactions.json              → reusable transaction validation payloads
-
-utils/                                    → reusable helpers for API client, DB connection, auth, logging and validation
-├── api-client.ts                         → reusable API request helper
-├── db-client.ts                          → reusable database connection helper
-├── auth-helper.ts                        → OAuth2/Open Banking token generation helper
-├── schema-validator.ts                   → reusable JSON schema validation utility
-└── logger.ts                             → centralised execution and error logging utility
-
-screenshots/                              → failure evidence and accessibility/UI execution snapshots
-├── ui-failures/                          → failed Playwright execution screenshots
-└── accessibility-reports/                → accessibility scan evidence and reports
+├── utils/                                            → reusable helpers for API client, DB connection, auth, logging and validation
+│   ├── api-client.ts                                 → reusable API request helper
+│   ├── db-client.ts                                  → reusable database connection helper
+│   ├── auth-helper.ts                                → supports OAuth2/FAPI token and secured header generation
+│   ├── schema-validator.ts                           → reusable JSON schema validation utility
+│   └── logger.ts                                     → centralised execution and error logging utility
+│
+├── reports/                                          → consolidated execution and validation reporting
+│   ├── allure-report/                                → automation execution and test evidence reports
+│   ├── lighthouse-report/                            → accessibility and performance audit reports
+│   └── api-validation-report/                        → API schema and contract validation reports
+│
+├── screenshots/                                      → failure evidence and accessibility/UI execution snapshots
+│   ├── ui-failures/                                  → failed Playwright execution screenshots
+│   └── accessibility-reports/                        → accessibility scan evidence and reports
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml                                    → GitHub Actions CI/CD pipeline execution
+│
+├── playwright.config.ts                              → Playwright execution and environment configuration
+├── package.json                                      → framework dependencies and execution scripts
+├── tsconfig.json                                     → TypeScript compiler configuration
+├── README.md                                         → framework overview, setup and execution guide
+└── .env                                              → environment variables and secure configuration
 ```
 ## Implemented Using
 
