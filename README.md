@@ -85,42 +85,28 @@ Open-Banking-QE-Playwright-Automation-Framework/
 - Page Object Model (POM)
   
 ---
-# 🧪 Enterprise Validation Capabilities
+# 🧪 Validation coverage
 
-### OpenAPI / Contract Validation
-- Swagger / OpenAPI governance validation
-- API contract and endpoint validation
-- Source: `contracts/cdr/openbanking-api.yaml`
+OpenAPI / Contract Validation
+- Validates Open Banking API endpoints, request/response contracts, mandatory fields and schema governance compliance
 
-### Schema Validation
-- AJV JSON schema validation
-- Runtime payload and datatype validation
-- Contract compliance validation
+Schema Validation
+- Validates runtime API payload structure, datatypes, required attributes and JSON schema compliance using AJV
 
-### API & Business Validation
-- Open Banking / CDR API automation
-- Consent lifecycle and negative scenario validation
-- Business response and assertion validation
-- Source: `test-data/accounts.json`
+API & Business Validation
+- Validates Open Banking/CDR business flows, consent lifecycle, negative scenarios and API response assertions
 
-### Backend & Data Validation
-- Backend reconciliation and database-to-API validation
-- Financial data integrity validation
-- ETL/CDC, ODS, aggregation and Snowflake validation concepts
+Backend & Data Validation
+- Validates backend reconciliation, API-to-database consistency, financial data integrity and ETL/ODS/Snowflake concepts
 
-### Accessibility & Performance Validation
-- Accessibility validation using axe-core and WCAG patterns
-- Performance and SLA validation
+Accessibility & Performance Validation
+- Validates WCAG accessibility compliance, response times, SLA thresholds and application performance behaviour
 
-### UI Automation & Reporting
-- Cross-browser UI automation using Playwright
-- Allure and Playwright enterprise reporting
-- Jira traceability integration patterns
+UI Automation & Reporting
+- Validates cross-browser customer journeys with Playwright and generates enterprise execution/reporting evidence
 
-### Scalable QE Architecture
-- Modular reusable framework design
-- Externalised test data management
-- CI/CD-ready layered QE architecture
+Scalable QE Architecture
+- Supports modular reusable automation, externalised test data management and CI/CD-ready layered QE design
 
   
 ---
