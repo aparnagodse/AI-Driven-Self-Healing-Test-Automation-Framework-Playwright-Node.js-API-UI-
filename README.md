@@ -33,8 +33,6 @@ ADR Applications
             ↓
 Customer-visible Data
 
-
-
 ---
 
 # 📂 Framework Structure
@@ -84,11 +82,10 @@ screenshots/
 
 # 🚀 Enterprise Open Banking / CDR QE Framework
 
-Validation Layers - Open Banking end to end 
+This framework demonstrates an enterprise Quality Engineering approach for Open Banking / Consumer Data Right (CDR) validation using Playwright and modern enterprise testing practices.
+**Validation Layers - Open Banking end to end** 
 
 <img width="399" height="432" alt="image" src="https://github.com/user-attachments/assets/c229c15b-c0ae-43b9-8987-629deb02ebdc" />
-
-This framework demonstrates an enterprise Quality Engineering approach for Open Banking / Consumer Data Right (CDR) validation using Playwright and modern enterprise testing practices.
 
 The framework has been extended beyond traditional UI automation to support:
 
