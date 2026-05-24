@@ -105,6 +105,12 @@ The framework demonstrates AI-assisted self-healing and intelligent failure anal
 
 ### ⚡ Accessibility + Performance Validation
 
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/c938e11e-9f23-40ed-9133-59db69d1d621" />
+
+
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/cde52af3-5098-4f56-a01d-7d29929b5e32" />
+
+
 ![Execution Summary](screenshots/execution-summary.png)
 
 ---
