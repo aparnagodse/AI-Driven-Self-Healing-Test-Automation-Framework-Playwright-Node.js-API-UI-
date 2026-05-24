@@ -16,23 +16,6 @@ The framework follows scalable enterprise QE architecture patterns including mod
 
 <img width="486" height="322" alt="image" src="https://github.com/user-attachments/assets/60bb6ce5-0f87-4623-9e9f-73a2030fce41" />
 
-
-Core Banking / CRM / Payments
-            ↓
-ETL / CDC Pipelines
-            ↓
-ODS
-            ↓
-DAF / Aggregation Layer
-            ↓
-Snowflake / Data Platform
-            ↓
-CDR APIs
-            ↓
-ADR Applications
-            ↓
-Customer-visible Data
-
 ---
 
 # 📂 Framework Structure
