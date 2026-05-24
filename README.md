@@ -108,7 +108,10 @@ UI Automation & Reporting
 Scalable QE Architecture
 - Supports modular reusable automation, externalised test data management and CI/CD-ready layered QE design
 
-  
+# Technology Stack
+
+Playwright • TypeScript • Node.js • AJV • OpenAPI/Swagger • REST API Testing • SQL • axe-core • Lighthouse • k6 • JMeter • Allure Reports • GitHub Actions • CI/CD • OAuth2/FAPI Concepts • Open Banking/CDR Validation 
+
 ---
 
 # 🤖 AI-Assisted Self-Healing Concepts
