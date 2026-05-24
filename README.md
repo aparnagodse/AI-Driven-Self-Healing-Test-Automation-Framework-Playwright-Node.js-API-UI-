@@ -99,7 +99,8 @@ The framework demonstrates AI-assisted self-healing and intelligent failure anal
 
 ### ✅ Playwright Report
 
-![Playwright Report](screenshots/playwright-report.png)
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/f13fdff1-f610-47ba-8e78-6d19a8c22a5b" />
+
 
 ---
 
@@ -111,13 +112,12 @@ The framework demonstrates AI-assisted self-healing and intelligent failure anal
 <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/cde52af3-5098-4f56-a01d-7d29929b5e32" />
 
 
-![Execution Summary](screenshots/execution-summary.png)
-
 ---
 
 ### 📊 Allure Reporting Dashboard
 
-![Allure Dashboard](screenshots/allure-dashboard.png)
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/972b520a-f2a4-4a42-bd15-51d0802ef072" />
+
 
 ---
 
