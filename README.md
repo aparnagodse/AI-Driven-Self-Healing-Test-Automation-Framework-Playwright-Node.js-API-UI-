@@ -10,7 +10,27 @@ The framework follows scalable enterprise QE architecture patterns including mod
 
 # 🏗️ Framework Architecture
 
-![Framework Architecture](screenshots/architecture.png)
+![Framework Architecture](screenshots/architecture.
+
+End-to-End Open Banking Architecture
+
+Core Banking / CRM / Payments
+            ↓
+ETL / CDC Pipelines
+            ↓
+ODS
+            ↓
+DAF / Aggregation Layer
+            ↓
+Snowflake / Data Platform
+            ↓
+CDR APIs
+            ↓
+ADR Applications
+            ↓
+Customer-visible Data
+
+
 
 ---
 
@@ -61,6 +81,29 @@ screenshots/
 
 # 🚀 Enterprise Open Banking / CDR QE Framework
 
+Validation Layers - Open Banking end to end 
+
+Layer          Validation
+
+OpenAPI         contract governance
+
+Schema          AJV validation
+
+Response        business validation
+
+Database        reconciliation
+
+ODS             source-target validation
+
+DAF             aggregation validation
+
+Snowflake       warehouse validation
+
+Consent         lifecycle validation
+
+Accessibility   WCAG validation
+
+Performance     SLA validation
 This framework demonstrates an enterprise Quality Engineering approach for Open Banking / Consumer Data Right (CDR) validation using Playwright and modern enterprise testing practices.
 
 The framework has been extended beyond traditional UI automation to support:
