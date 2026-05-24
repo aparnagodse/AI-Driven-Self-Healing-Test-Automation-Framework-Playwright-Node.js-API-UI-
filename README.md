@@ -1,10 +1,19 @@
 # Open Banking QE Automation Framework
-AI-Driven Self-Healing Playwright Framework for Enterprise Banking, API, Accessibility and Contract Testing
+## AI-Driven Self-Healing Playwright Framework for Enterprise Open Banking & Quality Engineering
 
 The framework supports Open Banking / Consumer Data Right (CDR) validation scenarios including API automation, contract validation, backend reconciliation, performance, accessibility and enterprise reporting. It aligns to enterprise validation layers covering ETL/CDC propagation, ODS reconciliation, aggregation validation, Snowflake consistency, consent lifecycle validation and downstream ADR consistency
 
 The framework follows scalable enterprise QE architecture patterns including modular design, reusable utilities, externalised test data management, layered validation, and reporting-driven execution.
 
+# 🚀 Open Banking QE Automation Framework
+
+## AI-Driven Self-Healing Playwright Framework for Enterprise Banking, API, Accessibility and Contract Testing
+
+The framework supports Open Banking / Consumer Data Right (CDR) validation scenarios including API automation, contract validation, backend reconciliation, performance, accessibility and enterprise reporting.
+
+It aligns to enterprise validation layers covering ETL/CDC propagation, ODS reconciliation, aggregation validation, Snowflake consistency, consent lifecycle validation and downstream ADR consistency.
+
+The framework follows scalable enterprise QE architecture patterns including modular design, reusable utilities, externalised test data management, layered validation and reporting-driven execution.
 
 # 🏗️ Framework Architecture
 
