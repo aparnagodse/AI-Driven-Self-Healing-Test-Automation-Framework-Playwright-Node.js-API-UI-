@@ -19,23 +19,23 @@ It aligns to enterprise Open Banking validation layers covering ETL/CDC propagat
 # 📂 Framework Structure
 
 ```text
-contracts/
+contracts/              → API contract and schema validation
 ├── cdr/
-│   ├── account.schema.json
-│   ├── transaction.schema.json
-│   ├── consent.schema.json
-│   └── openbanking-api.yaml
+│   ├── account.schema.json       → validates account API response structure and mandatory fields
+│   ├── transaction.schema.json   → validates transaction response schema and data types
+│   ├── consent.schema.json       → validates consent lifecycle and status rules
+│   └── openbanking-api.yaml      → OpenAPI/Swagger contract validation
 
-tests/
-├── api/
-├── database/
-├── performance/
-├── accessibility/
-├── ui/
+tests/                  → actual automated test suites
+├── api/                → API status, headers, schema, auth and business rule validation
+├── database/           → SQL/source table reconciliation and backend data validation
+├── performance/        → k6/JMeter response time, load and SLA validation
+├── accessibility/      → axe/Lighthouse WCAG accessibility validation
+└── ui/                 → Playwright end-to-end customer journey validation
 
-test-data/
-utils/
-screenshots/
+test-data/              → controlled mock payloads and reusable test input data
+utils/                  → reusable helpers for API client, DB connection, auth, logging and validation
+screenshots/            → failure evidence and accessibility/UI execution snapshots
 ```
 
 ---
