@@ -1,9 +1,7 @@
 # Open Banking QE Automation Framework
 AI-Driven Self-Healing Playwright Framework for Enterprise Banking, API, Accessibility and Contract Testing
 
-This repository demonstrates a modern enterprise Quality Engineering framework built using Playwright, JavaScript, and enterprise automation testing practices.
-
-The framework has been extended to support Open Banking / Consumer Data Right (CDR) validation scenarios including API automation, contract validation, backend validation, performance validation, accessibility testing, and enterprise reporting.
+The framework supports Open Banking / Consumer Data Right (CDR) validation scenarios including API automation, contract validation, backend reconciliation, performance, accessibility and enterprise reporting. It aligns to enterprise validation layers covering ETL/CDC propagation, ODS reconciliation, aggregation validation, Snowflake consistency, consent lifecycle validation and downstream ADR consistency
 
 The framework follows scalable enterprise QE architecture patterns including modular design, reusable utilities, externalised test data management, layered validation, and reporting-driven execution.
 
@@ -12,13 +10,11 @@ The framework follows scalable enterprise QE architecture patterns including mod
 
 **Playwright Automation framework Architecture**
 
-![Framework Architecture](screenshots/architecture)
+![Framework Architecture](screenshots/architecture.png)
 
 **End-to-End Open Banking Architecture**
 
 <img width="486" height="322" alt="image" src="https://github.com/user-attachments/assets/60bb6ce5-0f87-4623-9e9f-73a2030fce41" />
-
-
 
 
 Core Banking / CRM / Payments
@@ -90,27 +86,8 @@ screenshots/
 
 Validation Layers - Open Banking end to end 
 
-Layer          Validation
+<img width="399" height="432" alt="image" src="https://github.com/user-attachments/assets/c229c15b-c0ae-43b9-8987-629deb02ebdc" />
 
-OpenAPI         contract governance
-
-Schema          AJV validation
-
-Response        business validation
-
-Database        reconciliation
-
-ODS             source-target validation
-
-DAF             aggregation validation
-
-Snowflake       warehouse validation
-
-Consent         lifecycle validation
-
-Accessibility   WCAG validation
-
-Performance     SLA validation
 This framework demonstrates an enterprise Quality Engineering approach for Open Banking / Consumer Data Right (CDR) validation using Playwright and modern enterprise testing practices.
 
 The framework has been extended beyond traditional UI automation to support:
