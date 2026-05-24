@@ -72,36 +72,58 @@ Open Banking End-to-End Validation Layers**
 
 <img width="399" height="432" alt="image" src="https://github.com/user-attachments/assets/c229c15b-c0ae-43b9-8987-629deb02ebdc" />
 
-✅ Framework Capabilities
-Open Banking / CDR API automation
-Consent lifecycle and negative scenario validation
-AJV JSON schema and Swagger/OpenAPI contract validation
-Backend reconciliation and database-to-API validation
-ETL/CDC, ODS, aggregation and Snowflake validation concepts
-Accessibility validation using axe-core and WCAG patterns
-Performance and SLA validation
-Cross-browser UI automation using Playwright
-Allure and Playwright enterprise reporting
-Jira traceability integration patterns
-Modular, reusable and CI/CD-ready QE architecture
-Implemented using:
-Playwright
-JavaScript
-Page Object Model (POM)
-🧪 Enterprise Validation Layers
-OpenAPI Validation
-API governance and contract validation
-Source: contracts/cdr/openbanking-api.yaml
-Schema Validation
-Runtime payload and datatype validation
-Technology: AJV JSON schema validation
-Response Validation
-Business response and assertion validation
-Source: test-data/accounts.json
-Backend Reconciliation Validation
-Database-to-API consistency validation
-Financial data integrity and reconciliation checks
-⚠️ Note
+# 🚀 Enterprise Open Banking / CDR QE Framework
+
+Modern Quality Engineering framework for Open Banking / Consumer Data Right (CDR) validation using Playwright and enterprise automation testing practices.
+
+## Open Banking End-to-End Validation Layers
+
+<img width="399" height="432" alt="image" src="https://github.com/user-attachments/assets/c229c15b-c0ae-43b9-8987-629deb02ebdc" />
+
+## ✅ Framework Capabilities
+
+- Open Banking / CDR API automation
+- Consent lifecycle and negative scenario validation
+- AJV JSON schema and Swagger/OpenAPI contract validation
+- Backend reconciliation and database-to-API validation
+- ETL/CDC, ODS, aggregation and Snowflake validation concepts
+- Accessibility validation using axe-core and WCAG patterns
+- Performance and SLA validation
+- Cross-browser UI automation using Playwright
+- Allure and Playwright enterprise reporting
+- Jira traceability integration patterns
+- Modular, reusable and CI/CD-ready QE architecture
+
+## Implemented Using
+
+- Playwright
+- JavaScript
+- Page Object Model (POM)
+
+---
+
+# 🧪 Enterprise Validation Layers
+
+### OpenAPI Validation
+- API governance and contract validation
+- Source: `contracts/cdr/openbanking-api.yaml`
+
+### Schema Validation
+- Runtime payload and datatype validation
+- Technology: AJV JSON schema validation
+
+### Response Validation
+- Business response and assertion validation
+- Source: `test-data/accounts.json`
+
+### Backend Reconciliation Validation
+- Database-to-API consistency validation
+- Financial data integrity and reconciliation checks
+
+---
+
+# ⚠️ Note
+
 This framework is a representative enterprise QE accelerator designed to demonstrate scalable automation, Open Banking validation, backend reconciliation, contract validation, accessibility, reporting and enterprise testing concepts.
 
 # 🎯 Enterprise QE Focus Areas Demonstrated
