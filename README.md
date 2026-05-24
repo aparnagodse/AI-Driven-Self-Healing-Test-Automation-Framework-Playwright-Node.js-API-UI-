@@ -209,6 +209,6 @@ This framework is a representative enterprise QE accelerator designed to demonst
 # 👩‍💻 Author
 
 **Aparna Godse**  
-Quality Engineering Lead | Test Architecture & Automation Lead
+Quality Engineering Lead | Automation Lead
 
 Enterprise QE | Open Banking | API Testing | Accessibility | Data Validation | Performance Testing
