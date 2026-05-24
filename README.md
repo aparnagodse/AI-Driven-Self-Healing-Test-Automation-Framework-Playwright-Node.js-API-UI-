@@ -10,12 +10,16 @@ The framework follows scalable enterprise QE architecture patterns including mod
 
 # 🏗️ Framework Architecture
 
-![Framework Architecture](screenshots/architecture.
+**Playwright Automation framework Architecture**
+
+![Framework Architecture](screenshots/architecture)
+
+**End-to-End Open Banking Architecture**
 
 <img width="486" height="322" alt="image" src="https://github.com/user-attachments/assets/60bb6ce5-0f87-4623-9e9f-73a2030fce41" />
 
 
-End-to-End Open Banking Architecture
+
 
 Core Banking / CRM / Payments
             ↓
