@@ -37,7 +37,12 @@ test-data/              → controlled mock payloads and reusable test input dat
 utils/                  → reusable helpers for API client, DB connection, auth, logging and validation
 screenshots/            → failure evidence and accessibility/UI execution snapshots
 ```
+## Implemented Using
 
+- Playwright
+- JavaScript
+- Page Object Model (POM)
+  
 ---
 # 🧪 Enterprise Validation Capabilities
 
@@ -76,11 +81,6 @@ screenshots/            → failure evidence and accessibility/UI execution snap
 - Externalised test data management
 - CI/CD-ready layered QE architecture
 
-## Implemented Using
-
-- Playwright
-- JavaScript
-- Page Object Model (POM)
   
 ---
 
