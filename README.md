@@ -4,7 +4,7 @@
 
 This repository demonstrates a modern enterprise Quality Engineering approach for Open Banking / Consumer Data Right (CDR) validation using Playwright and scalable automation testing practices.
 
-The framework supports layered enterprise validation including API automation, contract validation, backend reconciliation, accessibility, performance and enterprise reporting.
+The framework demonstrates layered enterprise validation including API automation, contract validation, backend reconciliation, accessibility, performance and enterprise reporting.
 
 It aligns to enterprise Open Banking validation layers covering ETL/CDC propagation, ODS reconciliation, aggregation validation, Snowflake consistency, consent lifecycle validation and downstream ADR consistency.
 
@@ -81,6 +81,7 @@ screenshots/
 - Playwright
 - JavaScript
 - Page Object Model (POM)
+  
 ---
 
 # 🤖 AI-Assisted Self-Healing Concepts
@@ -178,8 +179,5 @@ This framework is a representative enterprise QE accelerator designed to demonst
 
 **Aparna Godse**  
 Quality Engineering Lead | Test Architecture & Automation Lead
-
-Enterprise QE | Open Banking | API Testing | Accessibility | Data Validation | Performance Testing
-
 
 Enterprise QE | Open Banking | API Testing | Accessibility | Data Validation | Performance Testing
