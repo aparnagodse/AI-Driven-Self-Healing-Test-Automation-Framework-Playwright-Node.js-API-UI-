@@ -39,42 +39,42 @@ screenshots/
 ```
 
 ---
+# 🧪 Enterprise Validation Capabilities
 
-# ✅ Framework Capabilities
-
-- Open Banking / CDR API automation
-- Consent lifecycle and negative scenario validation
-- AJV JSON schema validation
+### OpenAPI / Contract Validation
 - Swagger / OpenAPI governance validation
-- Backend reconciliation and database-to-API validation
-- ETL/CDC, ODS, aggregation and Snowflake validation concepts
-- Accessibility validation using axe-core and WCAG patterns
-- Performance and SLA validation
-- Cross-browser UI automation using Playwright
-- Allure and Playwright enterprise reporting
-- Jira traceability integration patterns
-- Modular, reusable and CI/CD-ready QE architecture
-
----
-
-# 🧪 Enterprise Validation Layers
-
-### OpenAPI Validation
-- API governance and contract validation
+- API contract and endpoint validation
 - Source: `contracts/cdr/openbanking-api.yaml`
 
 ### Schema Validation
+- AJV JSON schema validation
 - Runtime payload and datatype validation
-- Technology: AJV JSON schema validation
+- Contract compliance validation
 
-### Response Validation
+### API & Business Validation
+- Open Banking / CDR API automation
+- Consent lifecycle and negative scenario validation
 - Business response and assertion validation
 - Source: `test-data/accounts.json`
 
-### Backend Reconciliation Validation
-- Database-to-API consistency validation
-- Financial data integrity and reconciliation checks
+### Backend & Data Validation
+- Backend reconciliation and database-to-API validation
+- Financial data integrity validation
+- ETL/CDC, ODS, aggregation and Snowflake validation concepts
 
+### Accessibility & Performance Validation
+- Accessibility validation using axe-core and WCAG patterns
+- Performance and SLA validation
+
+### UI Automation & Reporting
+- Cross-browser UI automation using Playwright
+- Allure and Playwright enterprise reporting
+- Jira traceability integration patterns
+
+### Scalable QE Architecture
+- Modular reusable framework design
+- Externalised test data management
+- CI/CD-ready layered QE architecture
 ---
 
 # 🤖 AI-Assisted Self-Healing Concepts
