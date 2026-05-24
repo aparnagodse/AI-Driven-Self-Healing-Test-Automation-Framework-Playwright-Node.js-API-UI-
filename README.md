@@ -65,15 +65,6 @@ screenshots/
 
 # 🚀 Enterprise Open Banking / CDR QE Framework
 
-This repository demonstrates a modern Quality Engineering approach for Open Banking / Consumer Data Right (CDR) validation using Playwright and enterprise automation testing practices.
-
-**
-Open Banking End-to-End Validation Layers**
-
-<img width="399" height="432" alt="image" src="https://github.com/user-attachments/assets/c229c15b-c0ae-43b9-8987-629deb02ebdc" />
-
-# 🚀 Enterprise Open Banking / CDR QE Framework
-
 Modern Quality Engineering framework for Open Banking / Consumer Data Right (CDR) validation using Playwright and enterprise automation testing practices.
 
 ## Open Banking End-to-End Validation Layers
