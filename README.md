@@ -3,13 +3,6 @@
 
 The framework supports Open Banking / Consumer Data Right (CDR) validation scenarios including API automation, contract validation, backend reconciliation, performance, accessibility and enterprise reporting. It aligns to enterprise validation layers covering ETL/CDC propagation, ODS reconciliation, aggregation validation, Snowflake consistency, consent lifecycle validation and downstream ADR consistency
 
-The framework follows scalable enterprise QE architecture patterns including modular design, reusable utilities, externalised test data management, layered validation, and reporting-driven execution.
-
-# 🏗️ Framework Architecture
-
-**Playwright Automation framework Architecture**
-
-![Framework Architecture](screenshots/architecture.png)
 
 **End-to-End Open Banking Architecture**
 
@@ -115,6 +108,12 @@ Modern Quality Engineering framework for Open Banking / Consumer Data Right (CDR
 # ⚠️ Note
 
 This framework is a representative enterprise QE accelerator designed to demonstrate scalable automation, Open Banking validation, backend reconciliation, contract validation, accessibility, reporting and enterprise testing concepts.
+
+# 🏗️ Framework Architecture
+
+**Playwright Automation framework Architecture**
+
+![Framework Architecture](screenshots/architecture.png)
 
 # 🎯 Enterprise QE Focus Areas Demonstrated
 
