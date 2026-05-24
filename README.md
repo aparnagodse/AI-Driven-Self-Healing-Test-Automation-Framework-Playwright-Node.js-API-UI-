@@ -110,7 +110,7 @@ Scalable QE Architecture
 
 # Technology Stack
 
-Playwright • TypeScript • Node.js • AJV • OpenAPI/Swagger • REST API Testing • SQL • axe-core • Lighthouse • k6 • JMeter • Allure Reports • GitHub Actions • CI/CD • OAuth2/FAPI Concepts • Open Banking/CDR Validation 
+Playwright • TypeScript • Node.js • AJV • OpenAPI/Swagger • REST API Testing • SQL • axe-core • Lighthouse • k6 • JMeter • Allure Reports • Jira Integration • GitHub Actions • CI/CD • OAuth2/FAPI Concepts • Open Banking/CDR Validation
 
 ---
 
