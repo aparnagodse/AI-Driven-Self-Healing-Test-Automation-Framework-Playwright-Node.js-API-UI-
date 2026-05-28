@@ -14,6 +14,110 @@ It aligns to enterprise Open Banking validation layers covering ETL/CDC propagat
 
 <img width="486" height="322" alt="image" src="https://github.com/user-attachments/assets/60bb6ce5-0f87-4623-9e9f-73a2030fce41" />
 
+# 🏗️ End-to-End Open Banking / CDR Architecture
+
+The framework aligns to a representative enterprise Open Banking / Consumer Data Right (CDR) ecosystem where customer banking data securely flows across operational, aggregation, warehouse and API layers before being exposed to downstream ADR applications.
+
+<img width="486" height="322" alt="image" src="https://github.com/user-attachments/assets/60bb6ce5-0f87-4623-9e9f-73a2030fce41" />
+
+## Enterprise Flow Overview
+
+```text
+Customer
+↓
+Provides Consent
+
+ADR Application
+(Budgeting App / Fintech)
+↓
+OAuth 2.0 / FAPI Authentication
+
+API Gateway
+↓
+Consent Validation
+↓
+Access Control
+↓
+Rate Limiting / Security
+
+CDR APIs
+↓
+Accounts API
+Transactions API
+Consent API
+
+Backend Services
+↓
+ODS
+↓
+DAF / Aggregation Layer
+↓
+Snowflake / Enterprise Warehouse
+
+Core Banking Systems
+↓
+Accounts
+Payments
+Cards
+Transactions
+Customer Data
+```
+
+---
+
+## Validation Layers Demonstrated
+
+| Layer | Validation Performed |
+|---|---|
+| Consent Layer | Consent lifecycle and access validation |
+| OAuth/FAPI Layer | Authentication and security validation |
+| OpenAPI Layer | Contract and governance validation |
+| Schema Layer | Runtime payload and datatype validation |
+| API Layer | Accounts, transactions and business response validation |
+| CDC / ETL Layer | Downstream propagation validation |
+| ODS Layer | Source-to-target reconciliation validation |
+| DAF Layer | Aggregation and transformation validation |
+| Snowflake Layer | Warehouse consistency validation |
+| ADR Layer | Downstream customer-visible validation |
+
+---
+
+## Enterprise QE Validation Flow
+
+```text
+Core Banking
+↓
+CDC / ETL Propagation
+↓
+ODS Reconciliation Validation
+↓
+DAF / Aggregation Validation
+↓
+Snowflake Consistency Validation
+↓
+CDR API Validation
+↓
+ADR / Consumer Validation
+↓
+Customer-visible Data Validation
+```
+
+---
+
+## Enterprise Testing Areas Covered
+
+- Open Banking / CDR API automation
+- Consent lifecycle validation
+- Swagger / OpenAPI contract validation
+- AJV JSON schema validation
+- Backend reconciliation validation
+- Database-to-API consistency validation
+- ETL / CDC propagation validation concepts
+- ODS, DAF and Snowflake validation concepts
+- Accessibility validation using axe-core
+- Performance and SLA validation
+- Enterprise reporting and traceability
+
 ---
 
 # 📂 Framework Structure
