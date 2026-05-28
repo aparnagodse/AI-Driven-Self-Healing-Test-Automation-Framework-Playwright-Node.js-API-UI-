@@ -10,62 +10,107 @@ It aligns to enterprise Open Banking validation layers covering ETL/CDC propagat
 
 ---
 
-# 🏗️ End-to-End Open Banking Architecture
-
-<img width="486" height="322" alt="image" src="https://github.com/user-attachments/assets/60bb6ce5-0f87-4623-9e9f-73a2030fce41" />
-
 # 🏗️ End-to-End Open Banking / CDR Architecture
 
 The framework aligns to a representative enterprise Open Banking / Consumer Data Right (CDR) ecosystem where customer banking data securely flows across operational, aggregation, warehouse and API layers before being exposed to downstream ADR applications.
 
-<img width="486" height="322" alt="image" src="https://github.com/user-attachments/assets/60bb6ce5-0f87-4623-9e9f-73a2030fce41" />
-
-## Enterprise Flow Overview
-
 ```text
-Customer
-↓
-Provides Consent
+┌──────────────────────────────┐
+│ Customer                     │
+│ Provides Consent             │
+└──────────────┬───────────────┘
+               │ → Authorises secure banking data sharing
+               ▼
 
-ADR Application
-(Budgeting App / Fintech)
-↓
-OAuth 2.0 / FAPI Authentication
+┌──────────────────────────────┐
+│ ADR Application              │
+│ Lending / Fintech App        │
+└──────────────┬───────────────┘
+               │ → Requests customer banking data
+               ▼
 
-API Gateway
-↓
-Consent Validation
-↓
-Access Control
-↓
-Rate Limiting / Security
+┌──────────────────────────────┐
+│ OAuth 2.0 / FAPI             │
+│ Authentication & Security    │
+└──────────────┬───────────────┘
+               │ → Secures API authentication
+               ▼
 
-CDR APIs
-↓
-Accounts API
-Transactions API
-Consent API
+┌──────────────────────────────┐
+│ API Gateway                  │
+│ Consent / Access / Throttle  │
+└──────────────┬───────────────┘
+               │ → Validates consent and API security
+               ▼
 
-Backend Services
-↓
-ODS
-↓
-DAF / Aggregation Layer
-↓
-Snowflake / Enterprise Warehouse
+┌──────────────────────────────┐
+│ CDR APIs                     │
+│ Accounts / Transactions API  │
+└──────────────┬───────────────┘
+               │ → Exposes Open Banking APIs
+               ▼
 
-Core Banking Systems
-↓
-Accounts
-Payments
-Cards
-Transactions
-Customer Data
+┌──────────────────────────────┐
+│ Core Banking Systems         │
+│ Accounts / Payments / Cards  │
+│ Transactions / Customer Data │
+└──────────────┬───────────────┘
+               │ → Source banking systems
+               ▼
+
+┌──────────────────────────────┐
+│ ETL / CDC Pipelines          │
+│ Extract / Transform / Load   │
+└──────────────┬───────────────┘
+               │ → Propagates banking data downstream
+               ▼
+
+┌──────────────────────────────┐
+│ ODS                          │
+│ Operational Data Store       │
+└──────────────┬───────────────┘
+               │ → Near real-time operational data
+               ▼
+
+┌──────────────────────────────┐
+│ DAF / Aggregation Layer      │
+│ Transformation & Aggregation │
+└──────────────┬───────────────┘
+               │ → Aggregates and transforms banking data
+               ▼
+
+┌──────────────────────────────┐
+│ Snowflake / Enterprise DWH   │
+│ Curated Enterprise Data      │
+└──────────────┬───────────────┘
+               │ → Curated warehouse data exposed through APIs
+               ▼
+
+┌──────────────────────────────┐
+│ CDR APIs                     │
+│ API Response Layer           │
+└──────────────┬───────────────┘
+               │ → Returns validated banking data to ADR
+               ▼
+
+┌──────────────────────────────┐
+│ ADR Application              │
+│ Receives API Response        │
+└──────────────┬───────────────┘
+               │ → Displays banking insights to customer
+               ▼
+
+┌──────────────────────────────┐
+│ Customer                     │
+│ Views Shared Banking Data    │
+└──────────────────────────────┘
 ```
+
+The framework validates enterprise Open Banking flows across consent management, OAuth/FAPI security, OpenAPI contracts, schema validation, backend reconciliation, ETL/CDC propagation, ODS/DAF/Snowflake consistency and downstream ADR/API validation.
 
 ---
 
-## Validation Layers Demonstrated
+# 🧪 Enterprise Validation Capabilities
 
 | Layer | Validation Performed |
 |---|---|
@@ -82,43 +127,6 @@ Customer Data
 
 ---
 
-## Enterprise QE Validation Flow
-
-```text
-Core Banking
-↓
-CDC / ETL Propagation
-↓
-ODS Reconciliation Validation
-↓
-DAF / Aggregation Validation
-↓
-Snowflake Consistency Validation
-↓
-CDR API Validation
-↓
-ADR / Consumer Validation
-↓
-Customer-visible Data Validation
-```
-
----
-
-## Enterprise Testing Areas Covered
-
-- Open Banking / CDR API automation
-- Consent lifecycle validation
-- Swagger / OpenAPI contract validation
-- AJV JSON schema validation
-- Backend reconciliation validation
-- Database-to-API consistency validation
-- ETL / CDC propagation validation concepts
-- ODS, DAF and Snowflake validation concepts
-- Accessibility validation using axe-core
-- Performance and SLA validation
-- Enterprise reporting and traceability
-
----
 
 # 📂 Framework Structure
 
@@ -140,7 +148,7 @@ Open-Banking-QE-Playwright-Automation-Framework/
 │   │
 │   ├── database/                                     → SQL/source table reconciliation and backend data validation
 │   │   ├── account-reconciliation.sql                → validates API response against source account tables
-│   │   └── transaction-reconciliation.sql            → validates transaction consistency across backend systems
+│   │   └── transaction-reconciliation.sql            → backend transaction reconciliation validation
 │   │
 │   ├── performance/                                  → k6/JMeter response time, load and SLA validation
 │   │   └── openbanking-load.js                       → validates API performance under expected user load
